@@ -1,6 +1,9 @@
 let likeCount = 0;
 let curtido = false; // flag booleana
 
+let descurtirCount = 0;
+let descurtido = false; // flag booleana
+
 function curtir() {
 
  if(curtido == false){
@@ -13,7 +16,20 @@ function curtir() {
     document.getElementById("likeCount").innerText = likeCount;
  }
 
+function descurtir(){
+ if(descurtir == false){
+    descurtirCount++;
+    descurtir = true;
+    document.getElementById("likeCount").innerText = descurtirCount;
+ }else{
+   descurtirCount --;
+    descurtir = false;
+    document.getElementById("likeCount").innerText = descurtirCountt;
+
+
+}
   
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
+document.getElementById("deslikeBtn").addEventListener("click", descurtir);
