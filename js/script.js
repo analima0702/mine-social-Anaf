@@ -20,11 +20,11 @@ function descurtir(){
  if(descurtir == false){
     descurtirCount++;
     descurtir = true;
-    document.getElementById("likeCount").innerText = descurtirCount;
+    document.getElementById("descurtirCount").innerText = liketirCount;
  }else{
    descurtirCount --;
     descurtir = false;
-    document.getElementById("likeCount").innerText = descurtirCountt;
+    document.getElementById("descurtirCount").innerText = descurtirCountt;
 
 
 }
@@ -32,4 +32,4 @@ function descurtir(){
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
-document.getElementById("deslikeBtn").addEventListener("click", descurtir);
+document.getElementById("destirlikeBtn").addEventListener("click", descurtir);
