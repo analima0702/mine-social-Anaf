@@ -15,21 +15,20 @@ function curtir() {
     curtido = false;
     document.getElementById("likeCount").innerText = likeCount;
  }
+}
 
 function descurtir(){
- if(descurtir == false){
+ if(descurtido == false){
     descurtirCount++;
-    descurtir = true;
-    document.getElementById("descurtirCount").innerText = liketirCount;
+    descurtido = true;
+    document.getElementById("descurtirCount").innerText = descurtirCount;
  }else{
-   descurtirCount --;
-    descurtir = false;
-    document.getElementById("descurtirCount").innerText = descurtirCountt;
-
-
+   descurtirCount--;
+   descurtido = true;
+    document.getElementById("descurtirCount").innerText = descurtirCount;
 }
   
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
-document.getElementById("destirlikeBtn").addEventListener("click", descurtir);
+document.getElementById("deslikeBtn").addEventListener("click", descurtir);
